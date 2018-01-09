@@ -19,6 +19,7 @@ import java.util.List;
         @Override
         public void init() {
             setContentView(R.layout.activity_main);
+
             recyclerView = (RecyclerView) findViewById(R.id.recyclerView);
             adapter = new CustomAdapter();
             recyclerView.setAdapter(adapter);

@@ -63,7 +63,9 @@ public class CustomAdapter extends RecyclerView.Adapter<CustomAdapter.Holder>{
                 }
             });
         }
-        public void setNumber(String number){
+
+        // 이런식으로 홀더안에 메소드를 정의해서 사용할 수 있음.
+        public void setNumber(String number){ // 쿼리로 받아온 번호를 홀더에 있는 textView에 세팅.
             this.number = number;
             textNumber.setText(this.number);
         }
